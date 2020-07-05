@@ -12,9 +12,7 @@ class HttpAuthInterceptor @Inject constructor(
 
     override fun intercept(chain: Interceptor.Chain): Response {
         var request = chain.request()
-        //Build new request
         val builder = request.newBuilder()
-        //builder.header("Accept-Language", "uk")
         request = builder.build()
         return chain.proceed(request)
     }

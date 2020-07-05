@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">OpenLibrary</string>
+    <string name="search_hint">Input name</string>
+    <string name="button_search">Search</string>
+    <string name="details_publish_date" formatted="false">Publication date: %s</string>
+    <string name="details_pages" formatted="false">Pages count: %s</string>
+    <string name="error_empty">Nothing found</string>
+    <string name="error_network" formatted="false">Network error: %s</string>
 </resources>

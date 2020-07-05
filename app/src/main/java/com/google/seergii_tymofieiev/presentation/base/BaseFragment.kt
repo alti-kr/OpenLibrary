@@ -5,12 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.arellomobile.mvp.MvpAppCompatFragment
+import com.google.seergii_tymofieiev.presentation.common.LoadingPopupDialog
 
 /**
  * Created by Sergii Tymofieiev on 01.07.2020
  */
 abstract class BaseFragment : MvpAppCompatFragment(), BaseView {
     protected abstract val layoutRes: Int
+    protected var mLoadingPopupDialog: LoadingPopupDialog? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         injectDaggerDependency()
         super.onCreate(savedInstanceState)

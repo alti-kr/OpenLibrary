@@ -27,6 +27,7 @@ open class BasePresenterError<V : BaseViewError>(protected open var mFlowRouter:
             .subscribe(this::handleRequestError)
     }
     private fun handleRequestError(error: Throwable) {
-
+        viewState.toggleLoadingView(false)
+        viewState.showNetError(error.toString())
     }
 }

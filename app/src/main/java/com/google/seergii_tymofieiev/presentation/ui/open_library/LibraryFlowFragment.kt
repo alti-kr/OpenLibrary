@@ -34,10 +34,9 @@ class LibraryFlowFragment : FlowFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         navigator.setLaunchScreen(Screens.SearchBookScreen)
-        // navigator.setLaunchScreen(Screens.BirthdayProfileScreen)
     }
 
     override fun onExit() {
-        flowRouter.finishFlow()
+       flowRouter.finishFlow()
     }
 }
